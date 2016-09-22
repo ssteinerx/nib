@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import datetime
@@ -5,6 +6,7 @@ import re
 from nib import Document, Processor, before, document
 
 dateregex = re.compile(r'(?P<year>\d\d\d\d)[-./](?P<month>\d\d)[-./](?P<day>\d\d)')
+
 
 @before
 class BlogDateProcessor(Processor):
