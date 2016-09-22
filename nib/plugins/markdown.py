@@ -3,6 +3,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import markdown
 from nib import Processor, markup
 
+
 @markup(['.md', '.mkdn'])
 class MarkdownProcessor(Processor):
     def __init__(self, options):
