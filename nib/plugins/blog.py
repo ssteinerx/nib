@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import datetime
@@ -14,6 +15,7 @@ class BlogDateProcessor(Processor):
                 document.group = 'blog'
 
         return document
+
 
 @document('blog')
 class BlogDocumentProcessor(Processor):
