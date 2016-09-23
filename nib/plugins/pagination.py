@@ -1,6 +1,5 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-from os import path
 try:
     from urllib.parse import urlparse, urlunparse, ParseResult
 except ImportError:
