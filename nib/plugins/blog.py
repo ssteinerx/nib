@@ -7,6 +7,7 @@ from nib import Document, Processor, before, document
 
 dateregex = re.compile(r'(?P<year>\d\d\d\d)[-./](?P<month>\d\d)[-./](?P<day>\d\d)')
 
+
 @before
 class BlogDateProcessor(Processor):
     def document(self, document):
