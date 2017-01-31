@@ -17,6 +17,7 @@ class BlogDateProcessor(Processor):
 
         return document
 
+
 @document('blog')
 class BlogDocumentProcessor(Processor):
     def process(self, documents, resources):

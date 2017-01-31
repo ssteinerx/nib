@@ -95,7 +95,7 @@ if __name__ == '__main__':
     options = parser.parse_args()
 
     try:
-        if options.action == 'build' or options.action is None:
+        if options.action in ('build', None):
             nib.Build(nib.Config(options.config)).run()
             print('Done')
 

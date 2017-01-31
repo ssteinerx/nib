@@ -1,13 +1,13 @@
 # coding=utf-8
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-
 preprocessors = []
 postprocessors = []
 document_processors = {}
 resource_processors = {}
 markup_processors = {}
 render_processors = []
+
 
 def resource(extensions):
     if type(extensions) != list:

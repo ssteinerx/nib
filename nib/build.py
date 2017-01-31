@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import os
@@ -151,6 +152,9 @@ class Build(object):
         for extension in documents_by_group:
             group_documents = documents_by_group[extension]
 
+            # TODO ss: this doesn't make any sense
+            # setting extension doesn't do anything and the if below
+            # will handle the file if need be
             if extension not in markup_processors:
                 extension = ''
 

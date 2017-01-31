@@ -1,3 +1,4 @@
+# coding=utf-8
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 from os import path
@@ -18,6 +19,7 @@ def merge(dest, source):
         dest[key] = source[key]
 
     return dest
+
 
 class Config(dict):
     def __init__(self, filename=None):
